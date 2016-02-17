@@ -1,0 +1,11 @@
+include ../tour/tour
+include ../gallery/gallery
+
+mixin tours()
+	+b('main')
+		+b.tours
+			+e('h1').title Найдено
+				+e('span').number
+			+e.list
+		+tour()
+		+gallery()

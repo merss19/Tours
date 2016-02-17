@@ -1,0 +1,9 @@
+include /blocks/tours/tours
+
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Туры по России';
+
+block content
+	+tours()
